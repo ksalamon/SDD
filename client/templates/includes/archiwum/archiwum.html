@@ -33,6 +33,7 @@
                     <th>Data dyskusji</th>
                     <th>Data głosowania</th>
                     <th>Historia</th>
+                    <th>Status</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,15 +47,12 @@
                         <td>{{dataDyskusji}}</td>
                         <td>{{dataGlosowania}}</td>
                         <td>{{historia}}</td>
+                        <td>{{status}}</td>
                         <td>
-                            <!--<span data-toggle="modal" href="#infokwestia"-->
-                                  <!--class="glyphicon glyphicon-info-sign clickable"></span>-->
                             <span>
                                 <a href="{{pathFor 'informacjeKwestiaArchiwum'}}" class="glyphicon glyphicon-info-sign" title="Szczegółowe informacje"></a>
                             </span>
                             {{#if isAdminUser}}
-                                <!--<span data-toggle="modal" href="#przywrockwestia"-->
-                                      <!--class="glyphicon glyphicon-repeat clickable"></span>-->
                                 <span>
                                     <a href="{{pathFor 'proceduraPrzywracania'}}" class="glyphicon glyphicon-repeat" title="Procedura przywracania kwestii"></a>
                                 </span>
@@ -71,7 +69,5 @@
                 {{/each}}
             </div>
         </div>
-        <!--{{> przywrocKwestiaModal}}-->
-        <!--{{> infoKwestiaModal}}-->
     {{/if}}
 </template>

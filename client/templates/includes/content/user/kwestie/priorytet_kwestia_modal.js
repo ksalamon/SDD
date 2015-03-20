@@ -7,10 +7,19 @@ Template.priorytetKwestiaModalInner.helpers({
 Template.priorytetKwestiaModalInner.events({
     'click .btn-danger': function(e) {
         e.preventDefault();
+        var user = new Meteor.user();
         var currentKwestiaId = this._id;
+        var kwestia = Kwestia.findOne(currentKwestiaId);
+        //console.log("kwestia id "+currentKwestiaId);
+        if(_.include(kwestia.glosujacy, user._id)){
+            //console.log("zaglosowales juz!!");
+            //new Meteor.Error(422,"Zagłosowałeś już na tą kwestię!");
+            //throw new Meteor.Error(409,'Zagłosowałeś już na tą kwestię!');
+            throw new Meteor.Error(422,'Already upvoted this post');
+        }
         var hidden = document.getElementById('pole').value;
         var liczba = parseInt(hidden);
-        Kwestia.update(currentKwestiaId, {$inc: {priorytet: liczba}});
+        Kwestia.update(currentKwestiaId, {$addToSet: {glosujacy: user._id}, $inc: {priorytet: liczba}});
         $("#nadajpriorytetkwestia").modal("hide");
 
     },

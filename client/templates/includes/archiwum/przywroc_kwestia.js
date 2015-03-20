@@ -4,7 +4,8 @@ Template.proceduraPrzywracania.events({
         var currentKwestiaId = this._id;
         var postProperties =
         {
-            czyAktywny: true
+            czyAktywny: true,
+            status: 'deliberowana'
         };
         Kwestia.update(currentKwestiaId, {$set: postProperties});
         Router.go('archiwum');
