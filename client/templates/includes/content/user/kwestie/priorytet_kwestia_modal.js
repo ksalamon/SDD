@@ -10,12 +10,10 @@ Template.priorytetKwestiaModalInner.events({
         var user = new Meteor.user();
         var currentKwestiaId = this._id;
         var kwestia = Kwestia.findOne(currentKwestiaId);
-        //console.log("kwestia id "+currentKwestiaId);
-        if(_.include(kwestia.glosujacy, user._id)){
-            //console.log("zaglosowales juz!!");
-            //new Meteor.Error(422,"Zagłosowałeś już na tą kwestię!");
-            //throw new Meteor.Error(409,'Zagłosowałeś już na tą kwestię!');
-            throw new Meteor.Error(422,'Already upvoted this post');
+        if(_.include(kwestia.glosujacy, user._id))
+        {
+            throwError("Nadałeś już priorytet tej kwestii!");
+            return false;
         }
         var hidden = document.getElementById('pole').value;
         var liczba = parseInt(hidden);

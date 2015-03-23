@@ -1,6 +1,11 @@
 <template name="informacjeKwestia" xmlns="http://www.w3.org/1999/html">
     <div class="main">
         <h3>Informacje o kwestii</h3>
+        <h4>Liczba osób, które nadały priorytet tej kwestii: {{glosujacyCount}}</h4>
+        <!--{{#with nazwa}}-->
+            <!--{{kwestiaNazwa}}-->
+            <!--{{priorytet}}-->
+            <!--{{/with}}-->
         <div class="pull-right">
             <a href="{{pathFor 'proceduraWstrzymania'}}" class="btn btn-danger">
                 <span
@@ -9,8 +14,8 @@
             <a class="btn btn-success" href="#nadajpriorytetkwestia" data-toggle="modal">
                 <span data-toggle="modal" class="glyphicon glyphicon-thumbs-up clickable"
                       title="Nadaj priorytet"></span>  Nadaj priorytet</a>
-            <span data-toggle="modal" href="#nadajpriorytetkwestia"
-                  class="glyphicon glyphicon-thumbs-up clickable" title="Nadaj priorytet"></span>
+            <!--<span data-toggle="modal" href="#nadajpriorytetkwestia"-->
+                  <!--class="glyphicon glyphicon-thumbs-up clickable" title="Nadaj priorytet"></span>-->
         </div>
         <div class="clearfix"></div>
         <hr/>
