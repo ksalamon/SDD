@@ -3,17 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="efe4b461-e297-447a-9edc-77274a07f4c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-ui-bootstrap-3" afterPath="$PROJECT_DIR$/packages/meteor-accounts-ui-bootstrap-3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-ui-bootstrap-3/README.md" afterPath="$PROJECT_DIR$/packages/meteor-accounts-ui-bootstrap-3/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/accounts_admin.html" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/accounts_admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/delete_account_modal.html" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/delete_account_modal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/info_account_modal.html" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/info_account_modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/includes/account/manage_buttons.html" afterPath="$PROJECT_DIR$/client/templates/includes/account/manage_buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/release" afterPath="$PROJECT_DIR$/.meteor/release" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/includes/menus/submenu.html" afterPath="$PROJECT_DIR$/client/templates/includes/menus/submenu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/update_account_modal.html" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/update_account_modal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/update_roles_modal.html" afterPath="$PROJECT_DIR$/packages/meteor-accounts-admin-ui-bootstrap-3/client/update_roles_modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SDD.iws" />
@@ -154,62 +150,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SDD" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-accounts-admin-ui-bootstrap-3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".meteor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
