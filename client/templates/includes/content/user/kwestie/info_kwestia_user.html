@@ -27,13 +27,13 @@
                 <td><strong> Nazwa kwestii</strong></td><td>{{kwestiaNazwa}}</td>
             </tr>
             <tr>
-                <td><strong> Priorytet</strong></td><td>{{priorytet}}</td>
+                <td><strong> Priorytet</strong></td><td>{{sredniaPriorytet}}</td>
             </tr>
             <tr>
-                <td><strong> Temat</strong></td><td>{{temat_id}}</td>
+                <td><strong> Temat</strong></td><td>{{tematNazwa.nazwaTemat}}</td>
             </tr>
             <tr>
-                <td><strong> Rodzaj</strong></td><td>{{rodzaj_id}}</td>
+                <td><strong> Rodzaj</strong></td><td>{{rodzajNazwa.nazwaRodzaj}}</td>
             </tr>
 
             <tr>
@@ -42,9 +42,7 @@
             <tr>
                 <td><strong> Data głosowania</strong></td><td>{{dataGlosowania}}</td>
             </tr>
-            <tr>
-                <td><strong> Historia</strong></td><td>{{historia}}</td>
-            </tr>
+
         </table>
         <hr/>
         <h3>Treść kwestii</h3>
@@ -56,12 +54,7 @@
             <tr>
                 <td><strong> Szczegółowa treść</strong></td><td>{{szczegolowaTresc}}</td>
             </tr>
-            <tr>
-                <td><strong> Dyskusja kwestii</strong></td><td>{{dyskusjaTresci}}</td>
-            </tr>
-            <tr>
-                <td><strong> Ustalenia parametrów</strong></td><td>{{ustaleniaParametrow}}</td>
-            </tr>
+
         </table>
         {{> priorytetKwestiaModal}}
     </div>

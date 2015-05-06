@@ -1,5 +1,5 @@
 Template.manageAccount.helpers({
-    email: function () {
-        return getEmail(this);
+    test: function (emails) {
+        return emails[0].address;
     }
 });

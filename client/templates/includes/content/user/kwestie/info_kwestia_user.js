@@ -14,5 +14,11 @@ Template.informacjeKwestia.helpers({
         var currentKwestiaId = this._id;
         var tab = Kwestia.findOne(currentKwestiaId);
         return tab;
+    },
+    tematNazwa: function(){
+        return Temat.findOne({_id: this.temat_id});
+    },
+    rodzajNazwa: function(){
+        return Rodzaj.findOne({_id: this.rodzaj_id});
     }
 });

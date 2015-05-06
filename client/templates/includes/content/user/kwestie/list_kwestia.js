@@ -46,13 +46,29 @@ Template.listKwestia.helpers({
             {dataWprowadzenia: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {kwestiaNazwa: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {priorytet: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
+            {sredniaPriorytet: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {temat: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {rodzaj: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {dataDyskusji: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
             {dataGlosowania: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
-            {historia: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
+            //{historia: { $regex: Session.get('kwestiaSearchFilter'), $options: 'i' }},
         ]
-        },{limit: Session.get('tableLimit'), skip: Session.get('skipCount')});
+        },{limit: Session.get('tableLimit'), skip: Session.get('skipCount'), sort: {sredniaPriorytet: -1}});
+    },
+    priorytetsr: function() {
+        var i=0;
+
+        var kwestia = Kwestia.findOne({_id: this._id});
+        kwestia.glosujacy.forEach(function(item)
+        {
+            i++;
+        });
+        if(kwestia.priorytet === 0)
+            var srPriorytet = kwestia.priorytet;
+        else
+            var srPriorytet = kwestia.priorytet/i ;
+
+        return srPriorytet
     },
     email: function () {
         return getEmail(this);

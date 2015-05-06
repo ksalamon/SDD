@@ -5,28 +5,28 @@
         <div class="row">
             <div class="col col-md-10">
                 <form class="form-horizontal">
-                    <div class="form-group">
-                        <label class="control-label col-xs-3">Data wprowadzenia:</label>
-                        <div class="col-xs-9">
-                            <div class="input-group datetimepicker col-xs-5" id="test1" >
-                                <span class="input-group-addon glyphicon glyphicon-calendar"><i class="fa fa-calendar"></i></span>
-                                <input class="set-due-date form-control" type="text" name="dataWprowadzenia"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-xs-3">Data wprowadzenia:</label>-->
+                        <!--<div class="col-xs-9">-->
+                            <!--<div class="input-group datetimepicker col-xs-5" id="test1" >-->
+                                <!--<span class="input-group-addon glyphicon glyphicon-calendar"><i class="fa fa-calendar"></i></span>-->
+                                <!--<input class="set-due-date form-control" type="text" name="dataWprowadzenia"/>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="form-group" id="kwestiaNazwaGroup">
                         <label class="control-label col-xs-3" for="inputEmail">Nazwa kwestii:</label>
                         <div class="col-xs-9">
                             <input class="form-control" name="kwestiaNazwa" id="kwestiaNazwa" placeholder="Nazwa kwestii">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-xs-3" for="inputEmail">Priorytet:</label>
-                        <div class="col-xs-9">
-                            <input name="priorytet" type="text" class="form-control" id="priorytet" placeholder="Priorytet">
-                        </div>
-                    </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-xs-3" for="inputEmail">Priorytet:</label>-->
+                        <!--<div class="col-xs-9">-->
+                            <!--<input name="priorytet" type="text" class="form-control" id="priorytet" placeholder="Priorytet">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="form-group" id="tematyGroup">
                         <label class="control-label col-xs-3" for="inputEmail">Temat:</label>
                         <div class="col-xs-3">
                             <select name="tematy" id="tematy" class="form-control">
@@ -34,7 +34,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="rodzajeGroup">
                         <label class="control-label col-xs-3" for="inputEmail">Rodzaj:</label>
                         <div class="col-xs-3">
                             <select name="rodzaje" id="rodzaje" class="form-control">
@@ -42,7 +42,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="dataDyskusjiGroup">
                         <label class="control-label col-xs-3">Data dyskusji:</label>
                         <div class="col-xs-9">
                             <div class="input-group datetimepicker col-xs-5" id="test2">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="dataGlosowaniaGroup">
                         <label class="control-label col-xs-3">Data głosowania:</label>
                         <div class="col-xs-9">
                             <div class="input-group datetimepicker col-xs-5" id="test3">
@@ -60,40 +60,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-xs-3" for="inputEmail">Historia:</label>
-                        <div class="col-xs-9">
-                            <textarea class="form-control" name="historia" id="historia" placeholder="Historia"></textarea>
-                        </div>
-                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-xs-3" for="inputEmail">Historia:</label>-->
+                        <!--<div class="col-xs-9">-->
+                            <!--<textarea class="form-control" name="historia" id="historia" placeholder="Historia"></textarea>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                     <hr/>
 
                     <h3>Treść kwestii</h3>
-                    <div class="form-group">
+                    <div class="form-group" id="krotkaTrescGroup">
                         <label class="control-label col-xs-3" for="inputEmail">Krótka treść:</label>
                         <div class="col-xs-9">
                             <textarea class="form-control" name="krotkaTresc" id="krotkaTresc" placeholder="Krótka treść"></textarea>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="szczegolowaTrescGroup">
                         <label class="control-label col-xs-3" for="inputEmail">Szczegółowa treść:</label>
                         <div class="col-xs-9">
                             <textarea class="form-control" name="szczegolowaTresc" id="szczegolowaTresc" placeholder="Szczegółowa treść"></textarea>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-xs-3" for="inputEmail">Dyskusja kwestii:</label>
-                        <div class="col-xs-9">
-                            <input name="dyskusjaTresci" type="text" class="form-control" id="priordyskusjaTresciytet" placeholder="Dyskusja kwestii">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-xs-3" for="inputEmail">Ustalenia parametrów:</label>
-                        <div class="col-xs-9">
-                            <input name="ustaleniaParametrow" type="text" class="form-control" id="ustaleniaParametrow" placeholder="Ustalenia parametrów">
-                        </div>
-                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-xs-3" for="inputEmail">Dyskusja kwestii:</label>-->
+                        <!--<div class="col-xs-9">-->
+                            <!--<input name="dyskusjaTresci" type="text" class="form-control" id="priordyskusjaTresciytet" placeholder="Dyskusja kwestii">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-xs-3" for="inputEmail">Ustalenia parametrów:</label>-->
+                        <!--<div class="col-xs-9">-->
+                            <!--<input name="ustaleniaParametrow" type="text" class="form-control" id="ustaleniaParametrow" placeholder="Ustalenia parametrów">-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                     <div class="form-group">
                         <div class="col-xs-offset-3 col-xs-9">
